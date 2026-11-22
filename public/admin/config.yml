@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: 4zookeey69/static_blog
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "ブログ記事"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "記事タイトル", name: "title", widget: "string" }
+      - { label: "概要・説明文", name: "description", widget: "text" }
+      - { label: "公開日", name: "pubDate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "タグ", name: "tags", widget: "list", default: ["雑記"] }
+      - { label: "本文", name: "body", widget: "markdown" }

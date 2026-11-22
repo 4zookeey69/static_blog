@@ -12,22 +12,22 @@
 
   /* ---- palette ------------------------------------------------------- */
   /* washi (paper) */
-  --washi-100: #ffffff;
-  --washi-200: #faf8f5;
-  --washi-300: #f3f0ea;
-  --washi-400: #e8e4db;
+  --washi-100: #fcfafc;
+  --washi-200: #f6eff5;
+  --washi-300: #ede2ec;
+  --washi-400: #dfd0de;
 
   /* sumi (ink) */
-  --sumi-100: #e9e7e1;
-  --sumi-400: #5a5854;
-  --sumi-700: #333333;
-  --sumi-800: #1a1a1a;
-  --sumi-900: #101114;
-  --sumi-950: #0b0c0e;
+  --sumi-100: #f5ebd6;
+  --sumi-400: #cbb99e;
+  --sumi-700: #735770;
+  --sumi-800: #594157;
+  --sumi-900: #463244;
+  --sumi-950: #362534;
 
   /* shu (vermilion) */
-  --shu-500: #c73e3a;
-  --shu-400: #c85a52;
+  --shu-500: #d16b86;
+  --shu-400: #e88ca5;
 
   /* ---- semantic colours ---------------------------------------------- */
   --color-bg: light-dark(var(--washi-200), var(--sumi-950));

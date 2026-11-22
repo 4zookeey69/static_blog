@@ -20,28 +20,28 @@ export interface SocialLink {
 export const SITE = {
   /** Absolute origin of the deployed site. No trailing slash. */
   url: "https://sumi.p4ni.com",
-  title: "Sumi",
+  title: "4zookeey69's Blog",
   /**
    * Short Japanese mark used for the vertical rail and the loading screen.
    * Set to an empty string to drop the Japanese accents entirely.
    */
-  titleMark: "墨",
-  tagline: "An Astro theme in ink and paper",
+  titleMark: "小豆",
+  tagline: "~Ease Groovy Winds~",
   description:
-    "Sumi is a minimal Astro theme built around ink, washi paper and generous negative space. Dual light and dark themes, zero client JavaScript on article pages, and a WebGL ink simulation on the front page.",
+    "Everything favorite and important,in my life.",
   /** BCP 47 language tag, written to <html lang>. */
-  lang: "en",
+  lang: "ja",
   /** Used for og:locale. */
-  locale: "en_US",
+  locale: "ja_JP",
   /** Fallback OG image, relative to public/. Used for pages without one. */
   defaultOgImage: "/og-default.png",
 } as const;
 
 export const AUTHOR = {
-  name: "kpab",
+  name: "4zookeey69",
   url: "https://github.com/kpab",
   /** One or two sentences. Shown on /about and in structured data. */
-  bio: "Designer and developer working on quiet interfaces. Sumi is an attempt to give a blog the pacing of a printed page.",
+  bio: "A blog weaving daily life into a peaceful groove.",
 } as const;
 
 export const NAV: NavItem[] = [
@@ -51,7 +51,10 @@ export const NAV: NavItem[] = [
 ];
 
 export const SOCIAL: SocialLink[] = [
-  { label: "GitHub", href: "https://github.com/kpab/astro-sumi" },
+ // { label: "GitHub", href: "https://github.com/kpab/astro-sumi" },
+  { label: "X", href:"https://x.com/4ZooKeey69"},
+  { label: "Bluesky", href:"https://bsky.app/profile/4zookeey69.bsky.social"}
+
 ];
 
 export const BLOG = {

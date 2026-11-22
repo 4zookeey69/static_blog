@@ -15,40 +15,63 @@ const colophon = [
 
 <BaseLayout title="About" description={AUTHOR.bio}>
   <div class="wrap">
-    <PageHeader eyebrow="Colophon" title="About" lede={AUTHOR.bio} />
+    <PageHeader eyebrow="Profile" title="About" lede={AUTHOR.bio} />
 
     <div class="about">
       <div class="prose about__body">
-        <p>
-          {SITE.title} began as an attempt to answer a narrow question: what would
-          a blog look like if it were paced like a printed page rather than a feed?
-        </p>
+        <h2>Whose Blog～ナニヤツ～</h2>
 
         <p>
-          The answer turned out to be mostly subtraction. One serif for reading,
-          one monospace for labels, one accent colour spent four times a page,
-          and a great deal of space left alone. The only thing added back was the
-          ink on the front page — a real fluid simulation, because a theme about
-          ink should have some.
+          {AUTHOR.name}と申します。読みは「あずーきー」で。<br />
+          亥年、水瓶座。それから九紫火星。<br />
+          好きな食べ物は小豆（あずき）、つぶあん派。<br />
+          たこ焼き、木綿豆腐、納豆も好きだ。納豆は中粒がいい。<br />
+          そして、身体には悪いと聞いてもお構いなしに、コーラゼロを飲み続けている。<br />
+          気のせいだと思うが、食べ物のことしか書いてない。<br />
         </p>
 
-        <h2>Making it yours</h2>
+        <h2>What Blog〜ナニモノ〜</h2>
+
+        <p>当Blogでは、主に以下のテーマを軸に書き連ねていきます。</p>
+
+        <ul>
+          <li>
+            <strong>Gaming</strong><br />
+            ハマっているPCゲームについて。スマートフォンではゲームをしません。<br />Pay-to-Winの課金ゲームに興味がないので。
+          </li>
+          <li>
+            <strong>Gadjet</strong><br />
+            ゴリゴリガチ勢ではないけど、スマートフォンや周辺機器は好き。
+          </li>
+          <li>
+            <strong>Others</strong><br />
+            その他いろいろ、まだ決まっていないけど書きたいことはある。
+          </li>
+        </ul>
+
+        <h2>Why Blog〜ナニユエ〜</h2>
+
+        <p>生きていくうえで言葉は大切だ。<br />
+          しかし、昨今の言葉は大切にされているのだろうか。<br />
+          言葉の在り方、向き合い方を見直すと同時に、何か発信したい。<br />
+          そんなとき、昔よく無料ブログで遊んでいたことを思い出した。<br />
+          ブログ改め、VlogならぬBlogとして再開を決めた次第。<br />
+        </p>
+
+        <h2>How Blog～ヨリドコロ～</h2>
 
         <p>
-          Everything configurable lives in <code>src/config.ts</code>: the site
-          metadata, navigation, social links, how many posts appear per page, and
-          whether the ink runs at all. Posts are Markdown or MDX files under
-          <code>src/content/blog/</code>, validated against a schema so a missing
-          date fails the build rather than the page.
+          文章は書くのも読むのも面倒くさい。それは否めない。<br />
+          それから文章は動画配信のように、同じ場にいることで生まれる熱気を誰かと共有することも難しい。<br />
+          ただ、動画は配信する側が主体となるが、文章は読み手側が主体になれる。<br />
+          つづられた文字をどのように感じ取るか、それは読み手の自由だ。見知らぬ文字や、触れたことがない文章との出会いさえある。<br />
+          文字が織りなすBlogというのは、いわば、テキスト・ストリーミングなのだ。<br />
+          誰かと共有するだけが貴重な経験ではない。むしろ、誰とも共有できないからこそ読み手の色調を深めてくれることもある。<br />
+          そんなことを想いながら、モノクロームで面倒なBlogを世に出そうとしている。<br />
+
         </p>
 
-        <p>
-          Colours are declared once in <code>src/styles/tokens.css</code> using
-          <code>light-dark()</code>, so changing the palette means editing one
-          block rather than hunting through two themes.
-        </p>
-
-        <h2>Elsewhere</h2>
+        <h2>Elsewhere～ソノホカ～</h2>
 
         <ul>
           {
