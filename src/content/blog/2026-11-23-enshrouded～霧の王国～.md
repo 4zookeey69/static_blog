@@ -3,7 +3,7 @@ title: Enshrouded～霧の王国～
 description: 『Enshrouded～霧の王国』をはじめました
 pubDate: 2026-09-23
 tags:
-  - gaming
+  - Gaming
   - Enshrouded
   - 霧王国探訪記
 ---
