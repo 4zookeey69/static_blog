@@ -1,0 +1,139 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import "../styles/prose.css";
+
+const formId = "xkjrevjg";
+const formAction = "https://formspree.io/" + "f/" + formId;
+---
+
+<BaseLayout
+  title="お問い合わせ"
+  description="当ブログへのご質問・ご感想・掲載内容に関するお問い合わせ窓口です。"
+>
+  <div class="wrap">
+    <PageHeader
+      eyebrow="CONTACT"
+      title="お問い合わせ"
+      lede="当ブログへのご質問・ご感想・掲載内容に関するご連絡はこちらから"
+    />
+
+    <div class="contact">
+      <div class="prose">
+        <p>
+          記事の内容に関するご質問やご感想、著作権・掲載内容に関するご連絡などがございましたら、以下のフォームよりお気軽にお送りください。
+        </p>
+        <p>
+          ※送信いただいた個人情報は、<a href="/privacy/">プライバシーポリシー</a>に基づき適切に管理し、返信以外の目的では使用いたしません。
+        </p>
+      </div>
+
+      <form action={formAction} method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">お名前（ハンドルネーム可）<span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="例：あずーきー" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">件名</label>
+          <input type="text" id="subject" name="subject" placeholder="例：記事の感想・お問い合わせ" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">お問い合わせ内容<span class="required">*</span></label>
+          <textarea id="message" name="message" rows="6" required placeholder="こちらにメッセージをご記入ください"></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <div class="form-submit">
+          <button type="submit" class="submit-btn">送信する</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .contact {
+    max-width: var(--width-prose);
+    margin-inline: auto;
+    padding-block: var(--space-12);
+  }
+
+  .contact-form {
+    margin-top: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .form-group label {
+    font-size: var(--text-sm);
+    font-weight: bold;
+    color: var(--color-fg);
+  }
+
+  .required {
+    color: var(--color-accent, #d98282);
+    margin-left: 0.25rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: inherit;
+    font-size: var(--text-base);
+    color: var(--color-fg);
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-fg);
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  .form-submit {
+    margin-top: var(--space-2);
+    text-align: center;
+  }
+
+  .submit-btn {
+    padding: 0.85rem 2.75rem;
+    font-family: inherit;
+    font-size: var(--text-base);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: var(--color-bg);
+    background-color: var(--color-fg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+  }
+
+  .submit-btn:hover {
+    opacity: 0.88;
+  }
+
+  .submit-btn:active {
+    transform: translateY(1px);
+  }
+</style>
