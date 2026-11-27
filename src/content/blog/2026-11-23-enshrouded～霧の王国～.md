@@ -90,4 +90,4 @@ Keen Gamesは2005年創業のゲーム開発会社で、ホームページを拝
 
 ![enshrouded_photo_20260923_03](/images/enshrouded_photo_20260923_03.jpg "enshrouded_photo_20260923_03")
 
-<p style="text-align: center; font-weight: bold;">（画像はゲーム画面より拝借）</p>
+<p style="text-align: center; font-weight: bold;">（画像はすべてゲーム画面より拝借）</p>
