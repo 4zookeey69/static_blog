@@ -16,7 +16,7 @@ const blog = defineCollection({
       tags: z.array(z.string()).default([]),
       /** Hidden from production builds, still visible in `astro dev`. */
       draft: z.boolean().default(false),
-      heroImage: image().optional(),
+      heroImage: z.union([image(), z.string()]).optional(),
       heroImageAlt: z.string().optional(),
     }),
 });

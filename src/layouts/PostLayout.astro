@@ -42,7 +42,7 @@ const article = {
 <BaseLayout
   title={title}
   description={description}
-  ogImage={OG.enabled ? `/og/${post.id}.png` : undefined}
+    ogImage={typeof heroImage === "string" ? heroImage : (OG.enabled ? `/og/${post.id}.png` : undefined)}
   article={article}
 >
   <article class="post wrap">
@@ -79,6 +79,13 @@ const article = {
     {
       heroImage && (
         <figure class="post__hero">
+          {typeof heroImage === "string" ? (
+          <img
+            src={heroImage}
+            alt={heroImageAlt ?? ""}
+            loading="eager"
+          />
+        ) : (
           <Image
             src={heroImage}
             alt={heroImageAlt ?? ""}
@@ -86,6 +93,7 @@ const article = {
             sizes="(min-width: 60rem) 60rem, 100vw"
             loading="eager"
           />
+        )}
         </figure>
       )
     }

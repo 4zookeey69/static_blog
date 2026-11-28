@@ -20,4 +20,6 @@ collections:
       - { label: "概要・説明文", name: "description", widget: "text" }
       - { label: "公開日", name: "pubDate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
       - { label: "タグ", name: "tags", widget: "list", default: ["雑記"] }
+      - { label: "アイキャッチ画像（任意）", name: "heroImage", widget: "image", required: false }
+      - { label: "アイキャッチ画像の説明（任意）", name: "heroImageAlt", widget: "string", required: false }
       - { label: "本文", name: "body", widget: "markdown" }
