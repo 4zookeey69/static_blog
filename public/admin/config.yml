@@ -2,7 +2,7 @@ backend:
   name: github
   repo: 4zookeey69/static_blog
   branch: main
-  base_url: https://4zookeey69-blog.pages.dev
+  base_url: https://4zookeey69.space
   auth_endpoint: /api/auth
 
 

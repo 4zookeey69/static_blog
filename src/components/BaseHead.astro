@@ -145,3 +145,15 @@ const structuredData = article
   is:inline
   set:html={JSON.stringify(structuredData)}
 />
+<!-- Google tag (gtag.js) -->
+<script is:inline define:vars={{ gaId: "G-QPBTV2N19R" }}>
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/" + "gtag/js?id=" + gaId;
+  document.head.appendChild(s);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', gaId);
+</script>

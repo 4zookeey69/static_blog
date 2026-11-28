@@ -19,7 +19,7 @@ export interface SocialLink {
 
 export const SITE = {
   /** Absolute origin of the deployed site. No trailing slash. */
-  url: "https://sumi.p4ni.com",
+  url: "https://4zookeey69.space",
   title: "4zookeey69's Blog",
   /**
    * Short Japanese mark used for the vertical rail and the loading screen.
@@ -39,7 +39,7 @@ export const SITE = {
 
 export const AUTHOR = {
   name: "4zookeey69",
-  url: "https://github.com/kpab",
+  url: "https://4zookeey69.space",
   /** One or two sentences. Shown on /about and in structured data. */
   bio: "A blog weaving daily life into a peaceful groove.",
 } as const;
